@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEEED"
+    tools:context=".MainActivity" >
+    
+	<LinearLayout
+    	android:id="@+id/linearheder"
+    	android:onClick="NewsHed"
+       	android:layout_width="fill_parent"
+       	android:layout_height="160dp">
+        
+        <ImageView 
+            android:id="@+id/ImageHed"
+            android:onClick="NewsHed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3F4C57"/>
+
+	</LinearLayout>
+
+    <TextView
+        android:id="@+id/Hedtitel"
+        android:onClick="NewsHed"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="#004B59"
+        android:layout_marginTop="120dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:alpha="0.5"
+        android:text="اخبار عمومی"/>
+        
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearheder"
+        android:orientation="vertical">  
+    
+    <TextView
+        android:id="@+id/textviewnews"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:background="#FAA61A"
+        android:text="اخبار عمومی"/>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="10dp">
+                
+                <ImageButton 
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:onClick="Button1"
+                    android:background="@drawable/cluster"/>
+                
+                
+                <ImageButton 
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="Button3"
+                    android:background="@drawable/economy"/>
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="10dp">
+                
+                <ImageButton 
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:onClick="Button2"
+                    android:background="@drawable/industry"/>
+                
+                <ImageButton 
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="Button4"
+                    android:background="@drawable/finder"/>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </ScrollView>
+    
+</LinearLayout>    
+
+</RelativeLayout>
